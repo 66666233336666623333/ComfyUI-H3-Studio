@@ -1,0 +1,12 @@
+[project]
+name = "comfyui-h3-studio"
+version = "0.1.0"
+description = "Integrated MiniMax H3 / FastH3 workbench with on-demand FunControl and multi-reference selection"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT AND GPL-3.0-only"
+license-files = ["LICENSE", "LICENSES/GPL-3.0.txt", "THIRD_PARTY_NOTICES.md"]
+
+[project.urls]
+Repository = "https://github.com/66666233336666623333/ComfyUI-H3-Studio"
+Issues = "https://github.com/66666233336666623333/ComfyUI-H3-Studio/issues"

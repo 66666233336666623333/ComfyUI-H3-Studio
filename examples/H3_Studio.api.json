@@ -1,0 +1,85 @@
+{
+  "1": {
+    "class_type": "H3StudioPrompt",
+    "inputs": {
+      "source": "手写提示词",
+      "text_file": "",
+      "encoding": "自动",
+      "prompt": "清晨的湖面上漂浮着薄雾，远处的群山映在水中。镜头缓慢向前推进，柔和的自然光，真实摄影质感，连贯自然的运动。没有文字、字幕或水印。"
+    }
+  },
+  "2": {
+    "class_type": "H3StudioReferences",
+    "inputs": {
+      "manifest": "{\"image\":[],\"audio\":[],\"video\":[]}",
+      "use_video_audio": false
+    }
+  },
+  "3": {
+    "class_type": "H3StudioControlVideo",
+    "inputs": {
+      "file": "（不使用）",
+      "start_time": 0,
+      "duration": 0
+    }
+  },
+  "4": {
+    "class_type": "H3StudioEngine",
+    "inputs": {
+      "resolution": "横屏 16:9 · 960×544",
+      "duration_seconds": 5,
+      "enable_fasth3": true,
+      "enable_lora": false,
+      "enable_funcontrol": false,
+      "minimax_model": "minimax_h3_ref2va_int8_convrot.safetensors",
+      "fasth3_model": "fasth3_omniref_qad_nvfp4_comfy.safetensors",
+      "lora_name": "minimax_h3_ref2v_turbo_8step_v1.1_768p_comfyui_bf16.safetensors",
+      "lora_strength": 1,
+      "funcontrol_strength": 1,
+      "seed": 0,
+      "normal_steps": 20,
+      "lora_steps": 8,
+      "fast_steps": 8,
+      "funcontrol_model": "minimax_h3_fun_controlnet_union_2.0_pruned_int8_convrot.safetensors",
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "video_vae": "minimax_h3_video_vae_fp16.safetensors",
+      "audio_vae": "minimax_h3_audio_vae_fp32.safetensors",
+      "detector_model": "rt_detr_v4-x-hgnet_fp16.safetensors",
+      "pose_model": "sdpose_wholebody_fp16.safetensors",
+      "prompt": [
+        "1",
+        0
+      ],
+      "references": [
+        "2",
+        0
+      ],
+      "control": [
+        "3",
+        0
+      ]
+    }
+  },
+  "5": {
+    "class_type": "PreviewImage",
+    "inputs": {
+      "images": [
+        "4",
+        1
+      ]
+    }
+  },
+  "6": {
+    "class_type": "H3StudioSaveVideo",
+    "inputs": {
+      "output_directory": "",
+      "filename_prefix": "H3_Studio",
+      "format": "mp4",
+      "codec": "auto",
+      "video": [
+        "4",
+        0
+      ]
+    }
+  }
+}
