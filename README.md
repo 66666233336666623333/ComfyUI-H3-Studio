@@ -6,7 +6,7 @@ An integrated ComfyUI workbench for MiniMax H3 and FastH3, with optional LoRA / 
 
 ![Version](https://img.shields.io/badge/version-0.1.0-blue)
 ![ComfyUI](https://img.shields.io/badge/ComfyUI-native%20node%20expansion-397b99)
-[![Checks](https://github.com/66666233336666623333/ComfyUI-H3-Studio/actions/workflows/checks.yml/badge.svg)](https://github.com/66666233336666623333/ComfyUI-H3-Studio/actions/workflows/checks.yml)
+[![Local checks](https://img.shields.io/badge/local%20checks-45%20passed-success)](docs/VALIDATION.md)
 [![License scope](https://img.shields.io/badge/license-MIT%20%2B%20GPL--3.0-informational)](THIRD_PARTY_NOTICES.md)
 
 [下载工作流](examples/H3_Studio.json) · [模型准备](docs/MODELS.md) · [注意力与性能](docs/ATTENTION.md) · [验证范围与限制](docs/VALIDATION.md)
@@ -85,7 +85,7 @@ FastH3 下拉栏必须选择 **FastH3 专用权重**。普通 H3 即使文件名
 
 ## 开发与验证
 
-[AGENTS.md](AGENTS.md) 提供目录、实现边界和检查命令。[VALIDATION.md](docs/VALIDATION.md) 记录已验证与未验证的范围。轻量 CI 只检查文本、路径、帧分档、示例默认值和参考管理状态，不下载模型。
+[AGENTS.md](AGENTS.md) 提供目录、实现边界和检查命令。[VALIDATION.md](docs/VALIDATION.md) 记录已验证与未验证的范围。仓库提供轻量 CI 配置，只检查文本、路径、帧分档、示例默认值和参考管理状态，不下载模型。本次发布的本地 45 项测试通过；GitHub 托管检查未能启动，尚无云端通过结果。
 
 项目展示参考了 [ComfyUI Examples](https://github.com/comfyanonymous/ComfyUI_examples) 的可下载工作流入口，以及 [VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite) 的节点与预览说明形式；代码组织参考 [ComfyUI 扩展模板](https://github.com/Comfy-Org/cookiecutter-comfy-extension)。这些项目不是本包新增安装依赖。
 
